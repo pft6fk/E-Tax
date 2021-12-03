@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUpActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/muller_regular"
+            android:text="@string/stringSignUp"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="32sp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fullName"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/muller_regular"
+            app:layout_constraintTop_toBottomOf="@id/textSignUp"
+            app:layout_constraintStart_toStartOf="@id/textSignUp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edNameInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_lines"
+            android:fontFamily="@font/muller_regular"
+            android:hint="@string/fullName"
+            android:textSize="16sp"
+            app:backgroundTint="#CCEBEBF1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFullName" />
+
+        <TextView
+            android:id="@+id/textPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PhoneNumber"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/muller_regular"
+            app:layout_constraintTop_toBottomOf="@id/edNameInput"
+            app:layout_constraintStart_toStartOf="@id/textSignUp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edPhoneInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_lines"
+            android:fontFamily="@font/muller_regular"
+            android:hint="@string/PhoneNumber"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:backgroundTint="#CCEBEBF1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPhoneNumber" />
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stringEmail"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/muller_regular"
+            app:layout_constraintTop_toBottomOf="@id/edPhoneInput"
+            app:layout_constraintStart_toStartOf="@id/textSignUp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edEmailInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_lines"
+            android:fontFamily="@font/muller_regular"
+            android:hint="@string/stringEmail"
+            android:textSize="16sp"
+            app:backgroundTint="#CCEBEBF1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+
+        <TextView
+            android:id="@+id/textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stringPassword"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/muller_regular"
+            app:layout_constraintTop_toBottomOf="@id/edEmailInput"
+            app:layout_constraintStart_toStartOf="@id/textSignUp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edPasswordInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/border_lines"
+            android:fontFamily="@font/muller_regular"
+            android:hint="@string/stringPassword"
+            android:textSize="16sp"
+            app:backgroundTint="#CCEBEBF1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+
+        <TextView
+            android:id="@+id/textPasswordCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/muller_regular"
+            android:text="@string/textPasswordCheck"
+            app:layout_constraintStart_toStartOf="@id/textSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/edPasswordInput" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edPasswordCheckInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_lines"
+            android:fontFamily="@font/muller_regular"
+            android:hint="Password confirmation"
+            android:textSize="16sp"
+            app:backgroundTint="#CCEBEBF1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPasswordCheck"
+            app:layout_goneMarginTop="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_lines"
+            app:backgroundTint="#CC1124F1"
+            android:text="@string/stringSignUp"
+            android:fontFamily="@font/muller_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btCancel"
+            app:layout_constraintTop_toBottomOf="@+id/edPasswordCheckInput" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_line_black"
+            android:fontFamily="@font/muller_regular"
+            android:text="@string/string_cancel"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/btSignIn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edPasswordCheckInput" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+

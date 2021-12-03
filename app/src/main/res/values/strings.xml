@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">E-Tax</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="stringLogin">Логин</string>
+    <string name="stringPassword">Пароль</string>
+    <string name="stringSignIn">Войти</string>
+    <string name="string_cancel">Отмена</string>
+    <string name="forgot_email">Забыли эмейл?</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="stringCreateAccount">Создать аккаунт</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stringSignUp">Зарегистрироваться</string>
+    <string name="fullName">ФИО</string>
+    <string name="PhoneNumber">Номер телефона</string>
+    <string name="stringEmail">Эмейл (необязательно)</string>
+    <string name="textPasswordCheck">Подтверждение пароля</string>
+</resources>
