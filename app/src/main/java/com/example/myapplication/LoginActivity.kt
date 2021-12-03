@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 import com.example.myapplication.databinding.ActivityLoginBinding
 import com.example.myapplication.databinding.ActivitySignUpBinding
+import com.example.myapplication.ui.MainActivity
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding : ActivityLoginBinding
@@ -18,6 +19,11 @@ class LoginActivity : AppCompatActivity() {
         supportActionBar?.hide()
         binding.btCreateAccount.setOnClickListener{
             val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        binding.btSignIn.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }

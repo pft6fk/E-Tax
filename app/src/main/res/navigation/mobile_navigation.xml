@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/addFragment">
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.myapplication.ui.AddFragment"
+
+        android:label="Главная страница"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_optionFragment"
+            app:destination="@id/optionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/optionFragment"
+        android:name="com.example.myapplication.ui.optionFragment"
+        android:label="Тип имущества"
+        tools:layout="@layout/fragment_option" >
+        <action
+            android:id="@+id/action_optionFragment_to_flatOption"
+            app:destination="@id/flatOption" />
+        <action
+            android:id="@+id/action_optionFragment_to_addFragment"
+            app:popUpTo="@id/addFragment" />
+        <action
+            android:id="@+id/action_optionFragment_to_houseOption"
+            app:destination="@id/houseOption" />
+    </fragment>
+    <fragment
+        android:id="@+id/flatOption"
+        android:name="com.example.myapplication.ui.flat.FlatOption"
+        android:label="Коммунальные услуги"
+        tools:layout="@layout/fragment_flat_option" >
+        <action
+            android:id="@+id/action_flatOption_to_optionFragment"
+            app:destination="@id/optionFragment" />
+        <action
+            android:id="@+id/action_flatOption_to_optionFragment2"
+            app:popUpTo="@id/optionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/houseOption"
+        android:name="com.example.myapplication.ui.house.HouseOption"
+        android:label="Коммунальные услуги"
+        tools:layout="@layout/fragment_house_option" >
+        <action
+            android:id="@+id/action_houseOption_to_optionFragment"
+            app:destination="@id/optionFragment" />
+    </fragment>
+</navigation>
