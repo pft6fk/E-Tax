@@ -20,4 +20,9 @@
     <string name="stringChooseText">Выберите тип недвижемости</string>
     <string name="stringFlat">Квартира</string>
     <string name="stringHouse">Частный сектор</string>
+    <string name="string_chooseRegion">Выберите свой регион</string>
+    <string name="stringRegion">Регион</string>
+    <string name="stringBankAccount">Ваш лицевой счёт</string>
+    <string name="stringEnterBankAccount">Введите ваш лицевой счёт</string>
+    <string name="stringContinue">Продолжить</string>
 </resources>

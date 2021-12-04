@@ -3,18 +3,23 @@ package com.example.myapplication.ui.flat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ItemCategoryBinding
 import com.example.myapplication.ui.flat.MockData.Companion.getItemList
+import com.example.myapplication.ui.flat.categories.BankAccountFragment
+
 
 class FlatAdapter: RecyclerView.Adapter<FlatAdapter.categoryHolder>() {
     val category_list = getItemList()
-    var onItemClick : (() -> Unit)? = null
+    var onItemClick : ((Int) -> Unit)? = null
     inner class categoryHolder(item: View): RecyclerView.ViewHolder(item) {
-        init{
+        init{ //to get position of adapter, inside of invoke we call adapterPosition
             itemView.setOnClickListener {
-                onItemClick?.invoke()
+                onItemClick?.invoke(adapterPosition)
+
+
             }
         }
         val binding = ItemCategoryBinding.bind(item)
@@ -31,6 +36,16 @@ class FlatAdapter: RecyclerView.Adapter<FlatAdapter.categoryHolder>() {
 
     override fun onBindViewHolder(holder: categoryHolder, position: Int) {
         holder.bind(category_list[position])
+
+//        //for opening exact fragment
+//        holder.itemView.setOnClickListener { v ->
+//            val activity = v.context as AppCompatActivity
+//            val electricityFragment = BankAccountFragment()
+////            val flatOption = FlatOption()
+////            flatOption.findNavController().navigate(R.)
+//            activity.supportFragmentManager.beginTransaction().replace(R.id.rec, electricityFragment)
+//                .addToBackStack(null).commit()
+//        }
     }
 
     override fun getItemCount(): Int {
