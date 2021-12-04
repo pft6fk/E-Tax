@@ -34,7 +34,6 @@ class FlatOption : Fragment() {
             if(it == 6)     findNavController().navigate(R.id.action_flatOption_to_electricityFragment)
             if(it == 7)     findNavController().navigate(R.id.action_flatOption_to_electricityFragment)
         }
-
         return root
     }
     private fun init(){
