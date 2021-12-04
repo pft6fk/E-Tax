@@ -13,11 +13,21 @@
         android:layout_marginStart="16dp"
         android:fontFamily="@font/muller_regular"
         android:text="Войти"
-        android:layout_marginTop="50dp"
         android:textColor="@color/black"
         android:textFontWeight="600"
         android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -25,12 +35,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/muller_regular"
         android:text="@string/stringLogin"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textSignIn" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/edEmailInput"

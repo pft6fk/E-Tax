@@ -47,6 +47,9 @@
         <action
             android:id="@+id/action_flatOption_to_bankAccountWithRegionFragment"
             app:destination="@id/bankAccountWithRegionFragment" />
+        <action
+            android:id="@+id/action_flatOption_to_accountInfoFragment"
+            app:destination="@id/accountInfoFragment" />
     </fragment>
     <fragment
         android:id="@+id/houseOption"
@@ -62,6 +65,9 @@
         <action
             android:id="@+id/action_houseOption_to_bankAccountWithRegionFragment"
             app:destination="@id/bankAccountWithRegionFragment" />
+        <action
+            android:id="@+id/action_houseOption_to_accountInfoFragment"
+            app:destination="@id/accountInfoFragment" />
     </fragment>
     <fragment
         android:id="@+id/bankAccountFragment"

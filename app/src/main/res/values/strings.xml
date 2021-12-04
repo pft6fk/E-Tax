@@ -25,6 +25,7 @@
     <string name="stringBankAccount">Ваш лицевой счёт</string>
     <string name="stringEnterBankAccount">Введите ваш лицевой счёт</string>
     <string name="stringContinue">Продолжить</string>
+    <string name="createAccount">Регистрация</string>
     <string-array name="regions">
         <item>Ташкент</item>
         <item>Самарканд</item>

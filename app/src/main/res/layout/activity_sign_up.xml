@@ -7,6 +7,7 @@
     tools:context=".SignUpActivity">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
+    android:paddingBottom="30dp"
     android:layout_height="match_parent">
         <TextView
             android:id="@+id/textSignUp"
@@ -14,24 +15,33 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:fontFamily="@font/muller_regular"
-            android:text="@string/stringSignUp"
+            android:text="@string/createAccount"
             android:textColor="@color/black"
             android:textFontWeight="600"
             android:textSize="32sp"
-            android:layout_marginTop="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/logo"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/logo" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textFullName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fullName"
-            android:layout_marginTop="16dp"
             android:layout_marginStart="15dp"
             android:fontFamily="@font/muller_regular"
-            app:layout_constraintTop_toBottomOf="@id/textSignUp"
-            app:layout_constraintStart_toStartOf="@id/textSignUp"/>
+            android:text="@string/fullName"
+            app:layout_constraintStart_toStartOf="@id/textSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edNameInput"
@@ -155,7 +165,7 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/border_lines"
             android:fontFamily="@font/muller_regular"
-            android:hint="Password confirmation"
+            android:hint="@string/textPasswordCheck"
             android:textSize="16sp"
             app:backgroundTint="#CCEBEBF1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -170,9 +180,10 @@
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/border_lines"
-            app:backgroundTint="#CC1124F1"
-            android:text="@string/stringSignUp"
             android:fontFamily="@font/muller_regular"
+            android:text="@string/stringSignUp"
+            app:backgroundTint="#CC1124F1"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/btCancel"
             app:layout_constraintTop_toBottomOf="@+id/edPasswordCheckInput" />
@@ -187,6 +198,7 @@
             android:fontFamily="@font/muller_regular"
             android:text="@string/string_cancel"
             android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btSignIn"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edPasswordCheckInput" />
