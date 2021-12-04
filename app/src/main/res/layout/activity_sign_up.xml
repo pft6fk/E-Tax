@@ -139,6 +139,7 @@
             android:fontFamily="@font/muller_regular"
             android:hint="@string/stringPassword"
             android:textSize="16sp"
+            android:inputType="textPassword"
             app:backgroundTint="#CCEBEBF1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -165,6 +166,7 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/border_lines"
             android:fontFamily="@font/muller_regular"
+            android:inputType="textPassword"
             android:hint="@string/textPasswordCheck"
             android:textSize="16sp"
             app:backgroundTint="#CCEBEBF1"
@@ -174,7 +176,7 @@
             app:layout_goneMarginTop="8dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btSignIn"
+            android:id="@+id/btSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
@@ -199,7 +201,7 @@
             android:text="@string/string_cancel"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btSignIn"
+            app:layout_constraintEnd_toStartOf="@+id/btSignUp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edPasswordCheckInput" />
     </androidx.constraintlayout.widget.ConstraintLayout>
