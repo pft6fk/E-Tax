@@ -24,6 +24,10 @@ class BankAccountFragment : Fragment() {
             findNavController().navigate(R.id.action_bankAccountFragment_to_accountInfoFragment)
         }
 
+        binding.btCancel.setOnClickListener {
+            findNavController().navigate(R.id.action_bankAccountFragment_to_flatOption)
+        }
+
         return root
     }
 }

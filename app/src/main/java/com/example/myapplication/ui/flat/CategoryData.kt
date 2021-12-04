@@ -15,7 +15,7 @@ class MockData {
             data.add(CategoryData(R.drawable.hot_water,"Горячая вода"))
             data.add(CategoryData(R.drawable.land,"Имущественный налог"))
             data.add(CategoryData(R.drawable.garbage,"Твёрдобытовые отходы (Мусор)"))
-            data.add(CategoryData(R.drawable.house_tax,"ТСЖ"))
+            data.add(CategoryData(R.drawable.house_tax,"ТЧСЖ"))
 
             return data
         }

@@ -25,13 +25,14 @@ class FlatOption : Fragment() {
         init()
 
         adapter.onItemClick = { //(it) is position of clicked recycler
-            if(it == 0)     findNavController().navigate(R.id.action_flatOption_to_electricityFragment)
-            if(it == 1)     findNavController().navigate(R.id.action_flatOption_to_electricityFragment)
+            if(it == 0)     findNavController().navigate(R.id.action_flatOption_to_bankAccountWithRegionFragment)
+            if(it == 1)     findNavController().navigate(R.id.action_flatOption_to_bankAccountWithRegionFragment)
             if(it == 2)     findNavController().navigate(R.id.action_flatOption_to_electricityFragment)
             if(it == 3)     findNavController().navigate(R.id.action_flatOption_to_electricityFragment)
             if(it == 4)     findNavController().navigate(R.id.action_flatOption_to_electricityFragment)
             if(it == 5)     findNavController().navigate(R.id.action_flatOption_to_electricityFragment)
             if(it == 6)     findNavController().navigate(R.id.action_flatOption_to_electricityFragment)
+            if(it == 7)     findNavController().navigate(R.id.action_flatOption_to_electricityFragment)
         }
 
         return root

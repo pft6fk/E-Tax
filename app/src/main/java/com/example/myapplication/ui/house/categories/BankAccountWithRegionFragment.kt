@@ -7,25 +7,25 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.myapplication.R
-import com.example.myapplication.databinding.FragmentBankAccountBinding
+import com.example.myapplication.databinding.FragmentBankAccountWithRegionBinding
 
 
-class BankAccountFragment : Fragment() {
-    private lateinit var _binding: FragmentBankAccountBinding
+class BankAccountWithRegionFragment : Fragment() {
+    private lateinit var _binding: FragmentBankAccountWithRegionBinding
     private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        _binding = FragmentBankAccountBinding.inflate(inflater, container, false)
+        _binding = FragmentBankAccountWithRegionBinding.inflate(inflater, container, false)
         val root = binding.root
 
         binding.btContinue.setOnClickListener {
-            findNavController().navigate(R.id.action_bankAccountFragment_to_accountInfoFragment)
+            findNavController().navigate(R.id.action_bankAccountWithRegionFragment_to_accountInfoFragment)
         }
 
         binding.btCancel.setOnClickListener {
-            findNavController().navigate(R.id.action_bankAccountFragment_to_houseOption)
+            findNavController().navigate(R.id.action_bankAccountWithRegionFragment_to_houseOption)
         }
 
         return root

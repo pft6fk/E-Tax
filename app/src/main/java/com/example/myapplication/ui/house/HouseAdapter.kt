@@ -10,11 +10,11 @@ import com.example.myapplication.ui.house.MockData.Companion.getItemList
 
 class HouseAdapter: RecyclerView.Adapter<HouseAdapter.categoryHolder>() {
     val category_list = getItemList()
-    var onItemClick : (() -> Unit)? = null
+    var onItemClick : ((Int) -> Unit)? = null
     inner class categoryHolder(item: View): RecyclerView.ViewHolder(item) {
-        init{
+        init{ //to get position of adapter, inside of invoke we call adapterPosition
             itemView.setOnClickListener {
-                onItemClick?.invoke()
+                onItemClick?.invoke(adapterPosition)
             }
         }
         val binding = ItemCategoryBinding.bind(item)

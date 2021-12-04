@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.flat.categories.dir
+package com.example.myapplication.ui.flat.categories.dir.info
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,14 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.myapplication.ui.house.categories.dir.info.InfoAdapter
 import com.example.myapplication.databinding.FragmentInfoBinding
+import com.example.myapplication.ui.MainActivity
+import com.example.myapplication.ui.house.categories.dir.info.InfoAdapter
 
 
-class AccountInfoFragment : Fragment() {
-    private lateinit var _binding: FragmentInfoBinding
+class InfoFragment : Fragment() {
+
+    private var _binding: FragmentInfoBinding? = null
     private val binding get() = _binding!!
-    private var adapter = InfoAdapter()
+    var adapter = InfoAdapter()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -31,4 +33,12 @@ class AccountInfoFragment : Fragment() {
             infoRecycler.adapter = adapter
         }
     }
+
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+
 }

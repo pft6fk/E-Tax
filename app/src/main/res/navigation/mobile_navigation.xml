@@ -44,6 +44,9 @@
         <action
             android:id="@+id/action_flatOption_to_electricityFragment"
             app:destination="@id/bankAccountFragment" />
+        <action
+            android:id="@+id/action_flatOption_to_bankAccountWithRegionFragment"
+            app:destination="@id/bankAccountWithRegionFragment" />
     </fragment>
     <fragment
         android:id="@+id/houseOption"
@@ -56,6 +59,9 @@
         <action
             android:id="@+id/action_houseOption_to_electricityFragment"
             app:destination="@id/bankAccountFragment" />
+        <action
+            android:id="@+id/action_houseOption_to_bankAccountWithRegionFragment"
+            app:destination="@id/bankAccountWithRegionFragment" />
     </fragment>
     <fragment
         android:id="@+id/bankAccountFragment"
@@ -77,4 +83,19 @@
         android:name="com.example.myapplication.ui.flat.categories.dir.AccountInfoFragment"
         android:label="fragment_account_info"
         tools:layout="@layout/fragment_account_info" />
+    <fragment
+        android:id="@+id/bankAccountWithRegionFragment"
+        android:name="com.example.myapplication.ui.flat.categories.BankAccountWithRegionFragment"
+        android:label="fragment_bank_account_with_region"
+        tools:layout="@layout/fragment_bank_account_with_region" >
+        <action
+            android:id="@+id/action_bankAccountWithRegionFragment_to_flatOption"
+            app:destination="@id/flatOption" />
+        <action
+            android:id="@+id/action_bankAccountWithRegionFragment_to_houseOption"
+            app:destination="@id/houseOption" />
+        <action
+            android:id="@+id/action_bankAccountWithRegionFragment_to_accountInfoFragment"
+            app:destination="@id/accountInfoFragment" />
+    </fragment>
 </navigation>

@@ -25,4 +25,13 @@
     <string name="stringBankAccount">Ваш лицевой счёт</string>
     <string name="stringEnterBankAccount">Введите ваш лицевой счёт</string>
     <string name="stringContinue">Продолжить</string>
+    <string-array name="regions">
+        <item>Ташкент</item>
+        <item>Самарканд</item>
+        <item>Бухара</item>
+        <item>Фергана</item>
+        <item>Наманган</item>
+        <item>Ургенч</item>
+        <item>Гулистан</item>
+    </string-array>
 </resources>
