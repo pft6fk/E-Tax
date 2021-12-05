@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
             .allowMainThreadQueries()
             .build()
         db = dataBase!!.getUserDao()
-
+        supportActionBar!!.hide()
         binding.btSignIn.setOnClickListener{
                 val email = binding.edEmailInput.text.toString()
                 val password = binding.edPassword.text.toString()

@@ -21,6 +21,7 @@ class SignUpActivity : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar!!.hide()
         userDao = Room.databaseBuilder(this, UserDataBase::class.java, "mi-database.db")
             .allowMainThreadQueries()
             .build().getUserDao()
