@@ -77,6 +77,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
+        android:inputType="textPassword"
         app:backgroundTint="#CCEBEBF1"
         android:textSize="16sp"
         android:background="@drawable/border_lines"

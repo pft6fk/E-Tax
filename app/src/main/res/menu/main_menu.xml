@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/myDataFragment"
+            android:title="Мой профиль"/>
+        <item
+            android:id="@+id/viewPagerFragment"
+            android:title="Мои данные"/>
+        <item
+            android:id="@+id/fragmentTax"
+            android:title="Налоги и цены"/>
+
+        <item
+            android:id="@+id/menu_promotion1"
+            android:title="Тема"/>
+        <item
+            android:id="@+id/menu_settings1"
+            android:title="Уведомления"/>
+
+        <item
+            android:id="@+id/messagesFragment"
+            android:title="Настройки"/>
+        <item
+            android:id="@+id/menu_logOut1"
+            android:title="Выйти из аккаунта"/>
+        <item
+            android:id="@+id/menu_sale1"
+            android:title="О приложении"/>
+    </group>
+</menu>

@@ -4,11 +4,11 @@
     <item android:id="@+id/menu_news"
         android:icon="@drawable/ic_newspaper"
         android:title="Delete"
-        android:iconTint="#fff"
+        app:iconTint="#fff"
         app:showAsAction="ifRoom"/>
     <item android:id="@+id/menu_notification"
         android:icon="@drawable/ic_notification"
         android:title="Delete"
-        android:iconTint="#fff"
+        app:iconTint="#fff"
         app:showAsAction="ifRoom"/>
 </menu>

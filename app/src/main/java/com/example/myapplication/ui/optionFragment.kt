@@ -1,5 +1,6 @@
 package com.example.myapplication.ui
 
+import android.app.Activity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,12 +14,16 @@ import com.example.myapplication.databinding.FragmentOptionBinding
 class optionFragment : Fragment() {
     private lateinit var _binding : FragmentOptionBinding
     private val binding get() = _binding!!
+    lateinit var mainActivity: MainActivity
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
         _binding = FragmentOptionBinding.inflate(inflater, container, false)
         val root = binding.root
+        mainActivity = requireActivity() as MainActivity
+
+        mainActivity.hideDrawer()
 
         binding.flat.setOnClickListener {
             findNavController().navigate(R.id.action_optionFragment_to_flatOption)

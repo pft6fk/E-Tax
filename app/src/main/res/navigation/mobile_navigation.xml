@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_addFragment_to_optionFragment"
             app:destination="@id/optionFragment" />
+        <action
+            android:id="@+id/action_addFragment_to_fragmentTax"
+            app:destination="@id/fragmentTax" />
     </fragment>
     <fragment
         android:id="@+id/optionFragment"
@@ -87,7 +90,7 @@
     <fragment
         android:id="@+id/accountInfoFragment"
         android:name="com.example.myapplication.ui.flat.categories.dir.AccountInfoFragment"
-        android:label="fragment_account_info"
+        android:label="Информация о лицевом счёте"
         tools:layout="@layout/fragment_account_info" />
     <fragment
         android:id="@+id/bankAccountWithRegionFragment"
@@ -104,4 +107,9 @@
             android:id="@+id/action_bankAccountWithRegionFragment_to_accountInfoFragment"
             app:destination="@id/accountInfoFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/fragmentTax"
+        android:name="com.example.myapplication.ui.taxes.FragmentTax"
+        android:label="Налоги и цены"
+        tools:layout="@layout/fragment_tax2" />
 </navigation>
